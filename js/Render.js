@@ -56,7 +56,7 @@ class Render {
     }
     templateCurrent(data) {
         return `
-        <div class="app__text  app__text_big">${Math.round(data.main.temp)}</div>
+        <div class="app__text  app__text_big app__temp">${Math.round(data.main.temp)}</div>
         <div class="badge">${this.weekDays(data.data)}</div>
         <div class="break-column"></div>
         <div class="icon icon_big ${this.getIcon(data.weather.icon)}"></div>
@@ -78,7 +78,7 @@ class Render {
         return `<div class="app__day">
         <span class="badge">${this.weekDays(data.data)}</span>
         <div class="icon icon_medium ${this.getIcon(data.weather.icon)}"></div>
-        <p class="app__text">${Math.round(data.main.temp)}</p>
+        <p class="app__text app__temp">${Math.round(data.main.temp)}</p>
     </div>`
     }
     error(type) {
