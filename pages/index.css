@@ -5,8 +5,22 @@
     box-sizing: border-box;
 }
 html { font-size: 100% }
-body {
+.root {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    height: 100vh;
+    padding: 20px;
+}
+.back {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url(https://images6.alphacoders.com/372/372546.jpg); 
+    background-size: cover;
+    filter: blur(10px);
 }

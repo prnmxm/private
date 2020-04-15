@@ -77,29 +77,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px 5px;
+    justify-content: center;
+    padding: 5px 5px;
     min-height: 70px;
     width: 100%;
     border-left: 1px solid #000;
 }
-@media (max-width: 470px) {
-    .app__main {
-        flex-direction: column;
-    }
-    .app__form {
-        flex: 1 1;
-    }
-    .app__searchInput {
-        max-width: 100%;        
-        text-align: center;
-    }
-    .app__currentDay {
-        align-items: center;
-    }
-    .app__nextDays {
-        display: none;
-    }
-}
+
 .break-column {
     flex-basis: 100%;
     width: 0;
@@ -125,4 +109,23 @@
 }
 .app__text_big {
     font-size: 3rem;
+    line-height: 3rem;
+}
+@media (max-width: 760px) {
+    .app__main {
+        flex-direction: column;
+    }
+    .app__form {
+        flex: 1 1;
+    }
+    .app__searchInput {
+        max-width: 100%;        
+        text-align: center;
+    }
+    .app__currentDay {
+        align-items: center;
+    }
+    .app__nextDays {
+        display: none;
+    }
 }

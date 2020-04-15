@@ -7,19 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Погода</title>
     <link rel="stylesheet" href="./pages/index.css">
+    <link rel="stylesheet" href="vendor/normalize.css">
     <script src="https://kit.fontawesome.com/daeae051f8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="" style="background-image: url('https://images6.alphacoders.com/372/372546.jpg'); background-size: cover; filter: blur(10px);position: absolute; width: 100%; height: 100%; z-index: -1;"></div>
+    <div class="root">
     <div class="app">
         <div class="app__bg"><p class="app__text app__text_big"></p></div>
         <div class="app__main">
             <form class="app__form" id="formSearch">
-                <input type="search" class="app__searchInput" name="app__search" placeholder="Введите город"  autocomplete="off" pattern="[А-ЯЁа-яё]+" minlength="2" maxlength="20" required>
-                <span class="app__form-error">Text</span>
+                <input type="search" class="app__searchInput" name="app__search" placeholder="Search"  autocomplete="off" pattern="[А-ЯЁа-яё]+" minlength="2" maxlength="20" required>
+                <span class="app__form-error"></span>
             </form>
             <div class="app__info">
-                <span class="icon icon__medium fas fa-map-marker-alt"></span>
+                <span class="icon icon_medium fas fa-map-marker-alt"></span>
                 <p class="app__text app__text_bold" id="cityName">City</p>
                 <p class="app__text" id="time">22:22</p>
             </div>
@@ -36,30 +37,32 @@
                 <div class="app__day">
                     <span class="badge">Day</span>
                     <i class="icon">ICON</i>
-                    <p class="app__text app__temp">66</p>
+                    <p class="app__text app__temp">666</p>
                 </div>
                 <div class="app__day">
                     <span class="badge">Day</span>
                     <i class="icon">ICON</i>
-                    <p class="app__text app__temp">66</p>
+                    <p class="app__text app__temp">666</p>
                 </div>
                 <div class="app__day">
                     <span class="badge">Day</span>
                     <i class="icon">ICON</i>
-                    <p class="app__text app__temp">66</p>
+                    <p class="app__text app__temp">666</p>
                 </div>
                 <div class="app__day">
                     <span class="badge">Day</span>
                     <i class="icon">ICON</i>
-                    <p class="app__text app__temp">66</p>
+                    <p class="app__text app__temp">666</p>
                 </div>
                 <div class="app__day">
                     <span class="badge">Day</span>
                     <i class="icon">ICON</i>
-                    <p class="app__text app__temp">66</p>
+                    <p class="app__text app__temp">666</p>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="back"></div>
     </div>
     <script src="js/util.js"></script>
     <script src="js/UserLocation.js"></script>

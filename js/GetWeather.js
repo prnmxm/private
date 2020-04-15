@@ -14,7 +14,6 @@ class GetWeather {
             if(data.cod >= 404) {
                 return {'error': "Not found"};
             }   
-            console.log(data)
             const obj = {
                 'weather': {
                     'main': data.weather[0].main,
@@ -43,11 +42,11 @@ class GetWeather {
             if(data.cod >= 404) {
                 return {'error': "Not found"};
             }   
-            const obj = {};
+            const obj = new Map();
             data.list.forEach(e=> {
                 const key = (e.dt_txt).split(' ');
                 if(key[1] === '09:00:00') {
-                    obj[key[0]] = {
+                    obj.set(key[0], {
                         weather: {
                             main: e.weather[0].main,
                             description: e.weather[0].description,
@@ -56,7 +55,7 @@ class GetWeather {
                         main: {...e.main},
                         wind: {...e.wind},
                         data: e.dt
-                    }
+                    })
                 }
             })
             return obj;
