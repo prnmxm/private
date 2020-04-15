@@ -1,0 +1,12 @@
+@import "/blocks/app.css";
+@import "/blocks/badge.css";
+@import "/blocks/icon.css";
+* {
+    box-sizing: border-box;
+}
+html { font-size: 100% }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

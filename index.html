@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Погода</title>
+    <link rel="stylesheet" href="./pages/index.css">
+</head>
+<body>
+    <div class="" style="background-image: url('https://images6.alphacoders.com/372/372546.jpg'); background-size: cover; filter: blur(10px);position: absolute; width: 100%; height: 100%; z-index: -1;"></div>
+    <div class="app">
+        <div class="app__bg"><p class="app__text app__text_big">Загрузка</p></div>
+        <div class="app__main">
+            <form class="app__form" id="formSearch">
+                <input type="text" class="app__searchInput" name="app__search" placeholder="Введите город" autocomplete="off">
+                <span class="app__form-error">Text</span>
+            </form>
+            <div class="app__info">
+                <span class="icon icon__medium">Icon</span>
+                <p class="app__text app__text_bold">City</p>
+                <p class="app__text">22:22</p>
+            </div>
+        </div>
+        <div class="app__footer">
+            <div class="app__currentDay">
+                <div class="app__text app__temp app__temp_size_big">20</div>
+                <div class="badge">day</div>
+                <div class="break-column"></div>
+                <div class="icon">icon</div>
+                <div class="app__text app__wind">4mph</div>
+            </div>
+            <div class="app__nextDays">
+                <div class="app__day">
+                    <span class="badge">Day</span>
+                    <i class="icon">ICON</i>
+                    <p class="app__text app__temp">66</p>
+                </div>
+                <div class="app__day">
+                    <span class="badge">Day</span>
+                    <i class="icon">ICON</i>
+                    <p class="app__text app__temp">66</p>
+                </div>
+                <div class="app__day">
+                    <span class="badge">Day</span>
+                    <i class="icon">ICON</i>
+                    <p class="app__text app__temp">66</p>
+                </div>
+                <div class="app__day">
+                    <span class="badge">Day</span>
+                    <i class="icon">ICON</i>
+                    <p class="app__text app__temp">66</p>
+                </div>
+                <div class="app__day">
+                    <span class="badge">Day</span>
+                    <i class="icon">ICON</i>
+                    <p class="app__text app__temp">66</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/util.js"></script>
+    <script src="js/UserLocation.js"></script>
+    <script src="js/Api.js"></script>
+    <script src="js/Render.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
