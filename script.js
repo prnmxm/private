@@ -5,7 +5,7 @@ const config = {
         maximumAge: 0
     },
     weather: {
-        baseUrl: 'http://api.openweathermap.org/data/2.5/',
+        baseUrl: 'https://api.openweathermap.org/data/2.5/',
         apiKey: '0442627eac0a6f3797762c0eaa3b2cfb'
     }
 }
