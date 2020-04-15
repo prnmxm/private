@@ -29,7 +29,7 @@ class GetWeather {
             }
             return obj;
         } catch(e) {
-            console.log('error1')
+            return {e}
         }
     }
     async getNextDays() {
@@ -61,11 +61,8 @@ class GetWeather {
             })
             return obj;
         } catch(e) {
-            console.log('error1')
+            return {e}
         }
-    }
-    errorNetwork(error) {
-        console.log(error)
     }
     setCord(cord) {
         this.cord = {...cord};
