@@ -11,5 +11,4 @@
 ### Как запустить?
 1. Клонировать репозиторий на хостинг/локальный сервер или скачать архив и загрузить.
 2. Открыть сайт по домену.
-
-[logo]: https://raw.githubusercontent.com/prnmxm/private/master/prev.png "превью"
+![logo](https://raw.githubusercontent.com/prnmxm/private/master/prev.png)
