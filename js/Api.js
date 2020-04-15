@@ -17,8 +17,9 @@ class Api {
             console.log(e);
         }
     }
-    async getCurrentDay(dataInfo) {
+    async currentDay(dataInfo) {
         try {
+            console.log(dataInfo.lat, dataInfo.lon)
             const response = await fetch(`${this.weatherConfig.baseUrl}weather${dataInfo.city ?  `?q=${dataInfo.city}`:`?lat=${dataInfo.lat}&lon=${dataInfo.lon}`}&appid=${this.weatherConfig.apiKey}&units=metric&lang=${this.lang}`);
             const data = await response.json();
             return {data};
@@ -26,7 +27,7 @@ class Api {
             return {error:error};
         }
     }
-    async getNextDays(dataInfo) {
+    async nextDays(dataInfo) {
         try {
             const get = await fetch(`${this.weatherConfig.baseUrl}forecast${dataInfo.city ?  `?q=${dataInfo.city}`:`?lat=${dataInfo.lat}&lon=${dataInfo.lon}`}&appid=${this.weatherConfig.apiKey}&&units=metric&lang=${this.lang}`)
             const data = await get.json();

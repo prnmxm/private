@@ -7,8 +7,8 @@ class UserLocation {
         try {
             const cord = await this.getCurrentPosition();
             const lat  = cord.coords.latitude;
-            const lot = cord.coords.longitude;
-            return {lon, lat};
+            const lon = cord.coords.longitude;
+            return {lat, lon};
         } catch(e) {
             const cord = await this.getLocationIp();
             return cord;

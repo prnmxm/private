@@ -10,11 +10,14 @@ const config = {
     }
 }
 const form = document.querySelector('#formSearch');
+const cityName = document.querySelector('#cityName');
+const time = document.querySelector('#time');
 const api = new Api(config.weather,lang);
 const userLocation = new UserLocation(api.getLocationIp, config.locationOption);
-const render = new Render(api,form,lang);
+const getWeather = new GetWeather(api);
+const render = new Render(form,lang,getWeather,cityName,time);
 (async function() {
-    render.loading();
+    render.loading('Загрузка...');
     const cord = await userLocation.getLocation();
     render.render(cord)
     render.updateWeather();

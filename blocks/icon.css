@@ -1,0 +1,11 @@
+.icon {
+    color: #fff;
+    font-size: 1rem;
+    text-shadow: 0 0 3px #121212;
+}
+.icon__medium {
+    font-size: 2rem;
+}
+.icon__big {
+    font-size: 3rem;
+}

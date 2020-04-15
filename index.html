@@ -7,20 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Погода</title>
     <link rel="stylesheet" href="./pages/index.css">
+    <script src="https://kit.fontawesome.com/daeae051f8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="" style="background-image: url('https://images6.alphacoders.com/372/372546.jpg'); background-size: cover; filter: blur(10px);position: absolute; width: 100%; height: 100%; z-index: -1;"></div>
     <div class="app">
-        <div class="app__bg"><p class="app__text app__text_big">Загрузка</p></div>
+        <div class="app__bg"><p class="app__text app__text_big"></p></div>
         <div class="app__main">
             <form class="app__form" id="formSearch">
-                <input type="text" class="app__searchInput" name="app__search" placeholder="Введите город" autocomplete="off">
+                <input type="search" class="app__searchInput" name="app__search" placeholder="Введите город"  autocomplete="off" pattern="[А-ЯЁа-яё]+" minlength="2" maxlength="20" required>
                 <span class="app__form-error">Text</span>
             </form>
             <div class="app__info">
-                <span class="icon icon__medium">Icon</span>
-                <p class="app__text app__text_bold">City</p>
-                <p class="app__text">22:22</p>
+                <span class="icon icon__medium fas fa-map-marker-alt"></span>
+                <p class="app__text app__text_bold" id="cityName">City</p>
+                <p class="app__text" id="time">22:22</p>
             </div>
         </div>
         <div class="app__footer">
@@ -62,6 +63,7 @@
     </div>
     <script src="js/util.js"></script>
     <script src="js/UserLocation.js"></script>
+    <script src="js/GetWeather.js"></script>
     <script src="js/Api.js"></script>
     <script src="js/Render.js"></script>
     <script src="script.js"></script>
